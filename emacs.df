@@ -1,0 +1,5 @@
+(setq exec-path
+      (append exec-path
+              '("/opt/local/bin" "/usr/local/bin/")))
+
+(setq-default indent-tabs-mode nil)

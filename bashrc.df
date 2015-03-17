@@ -1,0 +1,11 @@
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+lsf() { ls -FCA "$@" ; }
+lsl() { ls -lA "$@" ; }
+
+# Promptly!
+export PS1='\w \$ '
