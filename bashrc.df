@@ -6,6 +6,11 @@ fi
 # User specific aliases and functions
 lsf() { ls -FCA "$@" ; }
 lsl() { ls -lA "$@" ; }
+xlabel () 
+{ 
+  echo -ne "\e]2;$@\a\e]1;$@\a"; 
+}
 
 # Promptly!
 export PS1='\w \$ '
+export PROMPT_DIRTRIM=2
